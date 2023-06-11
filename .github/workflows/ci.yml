@@ -15,22 +15,12 @@ jobs:
         with:
           name: Test Results
           path: reports/test-results.xml
-      - name: Create test summary
-        uses: test-summary/action@v1.0
-        if: always()
-        with:
-           paths: reports/*.xml
-  
-      - name: Publish test results
-        uses: EnricoMi/publish-unit-test-result-action@v1
-        if: always()
-        with:
-          files: "reports/*.xml"
 
-      - name: Artifacts
-        uses: actions/upload-artifact@v2
-        if: failure()
+      - name: Publish unit test results
+        uses: EnricoMi/publish-unit-test-result-action@v1.40
         with:
-          name: cypress-screenshots
-          path: ./cypress/screenshots
-  
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          commit: ${{ github.sha }}
+          files: |
+           path/to/unit-test-results.xml
+           path/to/other-unit-test-results.xml
