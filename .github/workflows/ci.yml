@@ -16,11 +16,4 @@ jobs:
           name: Test Results
           path: reports/test-results.xml
 
-      - name: Publish unit test results
-        uses: EnricoMi/publish-unit-test-result-action@v1.40
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          commit: ${{ github.sha }}
-          files: |
-           path/to/unit-test-results.xml
-           path/to/other-unit-test-results.xml
+      
