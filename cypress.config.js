@@ -7,5 +7,10 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
+  video: false,
+  reporter: 'cypress-multi-reporters',
+  reporterOptions: {
+        reporterEnabled: 'mocha-junit-reporters, mochawesome',
+  }
   
 });
