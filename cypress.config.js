@@ -8,9 +8,9 @@ module.exports = defineConfig({
     },
   },
   video: false,
-  reporter: 'cypress-multi-reporters',
+  reporter: 'junit',
   reporterOptions: {
-        reporterEnabled: 'mocha-junit-reporters, mochawesome',
+        mochaFile: 'reports/test-results-[hash].xml',
   }
   
 });
