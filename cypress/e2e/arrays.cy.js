@@ -1,5 +1,6 @@
 /// <reference types="cypress" />
 
+
 describe('Arrays', () => {
     beforeEach(() => {
         cy.viewport(1280, 720)
