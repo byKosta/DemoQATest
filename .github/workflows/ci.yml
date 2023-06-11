@@ -9,3 +9,9 @@ jobs:
       
       - name: Cypress run
         uses: cypress-io/github-action@v5
+
+      - name: Publish unit test results
+        uses: actions/upload-artifact@v2
+        with:
+          name: Test Results
+          path: reports/test-results.xml
