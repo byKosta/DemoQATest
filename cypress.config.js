@@ -15,5 +15,4 @@ module.exports = defineConfig({
    reporterOptions: {
         mochaFile: 'reports/test-results-[hash].xml',
   },
-  
 });
