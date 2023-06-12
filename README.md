@@ -3,3 +3,4 @@
 # https://demoqa.com/
 
 # +Add Ci
+# +Add Allure
