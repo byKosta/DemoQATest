@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Jun 12 20:58:24 CEST 2023","Mon Jun 12 20:58:31 CEST 2023","6364","","Arrays","","","","Verify Meny Search",""
+"broken","Mon Jun 12 20:51:43 CEST 2023","Mon Jun 12 20:51:43 CEST 2023","0","","cypress/e2e/twotest.cy.js","","","","Oops...we found an error preparing this test file: cypress/e2e/twotest.cy.js",""
+"broken","Mon Jun 12 20:59:06 CEST 2023","Mon Jun 12 20:59:06 CEST 2023","0","","cypress/e2e/first.cy.js","","","","Oops...we found an error preparing this test file: cypress/e2e/first.cy.js",""
+"passed","Mon Jun 12 20:58:57 CEST 2023","Mon Jun 12 20:59:02 CEST 2023","5738","","first test","","","","check elements",""
+"broken","Mon Jun 12 20:51:40 CEST 2023","Mon Jun 12 20:51:40 CEST 2023","0","","cypress/e2e/first.cy.js","","","","Oops...we found an error preparing this test file: cypress/e2e/first.cy.js",""
+"broken","Mon Jun 12 20:59:09 CEST 2023","Mon Jun 12 20:59:09 CEST 2023","0","","cypress/e2e/twotest.cy.js","","","","Oops...we found an error preparing this test file: cypress/e2e/twotest.cy.js",""
+"passed","Mon Jun 12 20:58:38 CEST 2023","Mon Jun 12 20:58:50 CEST 2023","11394","","Common methods","","","","method invoc",""
