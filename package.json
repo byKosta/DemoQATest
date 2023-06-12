@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ui-regression": "cypress run --browser chrome --spec cypress/e2e/1-getting-started/**.js",
+    "ui-regression-allure": "cypress run --browser chrome --spec cypress/e2e/1-getting-started/**.js --env allure=true",
+    "allure:clear": "rm -r allure-results/ allure-report cypress/screenshots || true",
+    "allure:report": "allure generate allure-results --clean -o allure-report",
+    "allure:history": "mv -f allure-report/history allure-results/history && rm -r allure-report || true"
   },
   "author": "byKosta",
   "license": "ISC",
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.0",
     "cucumber": "^6.0.7",
     "cypress": "^12.14.0",
     "cypress-cucumber-preprocessor": "^4.3.1"
