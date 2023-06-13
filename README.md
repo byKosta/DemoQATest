@@ -1,6 +1,6 @@
 ## DEMOQA
 
-Allure integration!
+Allure integration
 
 github-action
 
