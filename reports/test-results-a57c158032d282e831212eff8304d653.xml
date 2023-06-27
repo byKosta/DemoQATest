@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="4.023" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-06-25T18:22:26" tests="0" file="cypress\e2e\first.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="first test" timestamp="2023-06-25T18:22:26" tests="1" time="3.994" failures="1">
+    <testcase name="first test should navigate to the demoQA website" time="0.000" classname="should navigate to the demoQA website">
+      <failure message="The following error originated from your test code, not from Cypress.
+
+  &gt; expected &apos;The following error originated from your application code, not from Cypress.\n\n  &gt; jQuery is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.&apos; to equal &apos;something about the error&apos;
+
+When Cypress detects uncaught errors originating from your test code it will automatically fail the current test." type="AssertionError"><![CDATA[AssertionError: The following error originated from your test code, not from Cypress.
+
+  > expected 'The following error originated from your application code, not from Cypress.\n\n  > jQuery is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.' to equal 'something about the error'
+
+When Cypress detects uncaught errors originating from your test code it will automatically fail the current test.
+    at $Cy.eval (webpack:///./cypress/e2e/first.cy.js:8:31)
+
+      + expected - actual
+
+      -'The following error originated from your application code, not from Cypress.\n\n  > jQuery is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.'
+      +'something about the error'
+      ]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
