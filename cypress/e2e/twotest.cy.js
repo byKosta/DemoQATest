@@ -11,7 +11,7 @@ describe('two test', () => {
         cy.get('#permanentAddress').type('123 Main St')
         cy.get('#submit').click()
         cy.get('#userEmail').clear()
-        cy.get('input[placeholder="name@example.com"]').type('John Doe');
+        cy.get('input[placeholder="name@example.com"]').type('John Doe')
         cy.get('#submit').contains('Submit').should('be.visible')
 
         

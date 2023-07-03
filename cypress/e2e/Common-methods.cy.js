@@ -30,7 +30,7 @@ describe('Common methods', () => {
 
 
 
-    it.only('method invoc', () => {
+    it('method invoc', () => {
         cy.timeout(7000)
         cy.viewport(1280, 720)
 
