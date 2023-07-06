@@ -11,7 +11,7 @@ describe('Common methods', () => {
         cy.title().should('eq', 'DEMOQA');
         cy.log('Test has been completed');
         cy.get('div.avatar').should('have.css','color','rgb(1, 160, 224)');
-        cy.get('div.card-body h5').contains('Elements').click();
+        cy.get('div.card-body h5').contains('Elements').click()
         cy.get('div.main-header').should('contain', 'Elements')
         cy.get('div.main-header').should('be.visible')  
         cy.contains('Text Box').click()
@@ -23,7 +23,7 @@ describe('Common methods', () => {
         .should('have.value', '')
 
         cy.get('div.element-group #item-1').contains('Check Box').click();
-        cy.get('input#tree-node-home').check({force: true}).should('be.checked');
+        cy.get('input#tree-node-home').check({force: true}).should('be.checked')
         cy.get('input#tree-node-home').uncheck({force: true})
       
     })
