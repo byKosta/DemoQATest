@@ -38,4 +38,5 @@ describe('Common methods', () => {
         cy.contains('Marketplace').invoke('removeAttr', 'target').click()
 })
 });
+
  

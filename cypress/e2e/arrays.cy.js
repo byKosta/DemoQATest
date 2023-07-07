@@ -7,6 +7,7 @@ describe('Arrays', () => {
         cy.visit('https://openweathermap.org/')
         cy.get('#desktop-menu a[href="/guide"]').invoke('text').as('menuGuide')
     })
+    
 
     it('Verify Meny Search', function () {
         cy.get('.search-container > input').type('New York', {force: true})
@@ -17,5 +18,6 @@ describe('Arrays', () => {
                cy.wrap($el).click()
            }
         })
+        it
     })
 })
