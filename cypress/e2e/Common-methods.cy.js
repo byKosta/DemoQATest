@@ -35,7 +35,7 @@ describe('Common methods', () => {
         cy.viewport(1280, 720)
 
         cy.visit('https://openweathermap.org/')
-        cy.contains('Marketplace').invoke('removeAttr', 'target').click()
+        cy.contains('Marketplace').invoke('removeAttr', 'target').click();
 })
 });
 
