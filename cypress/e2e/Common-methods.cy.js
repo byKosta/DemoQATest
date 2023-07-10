@@ -8,8 +8,8 @@ describe('Common methods', () => {
         cy.visit('https://demoqa.com/');
         //cy.pause();
         cy.get('div.card-body').find('h5').should('have.length', 6)
-        cy.title().should('eq', 'DEMOQA');
-        cy.log('Test has been completed');
+        cy.title().should('eq', 'DEMOQA')
+        cy.log('Test has been completed')
         cy.get('div.avatar').should('have.css','color','rgb(1, 160, 224)')
         cy.get('div.card-body h5').contains('Elements').click()
         cy.get('div.main-header').should('contain', 'Elements')
