@@ -5,7 +5,7 @@
 describe('Common methods', () => {
    
     it('verify link', () => {
-        cy.visit('https://demoqa.com/');
+        cy.visit('https://demoqa.com/')
         //cy.pause();
         cy.get('div.card-body').find('h5').should('have.length', 6)
         cy.title().should('eq', 'DEMOQA')
