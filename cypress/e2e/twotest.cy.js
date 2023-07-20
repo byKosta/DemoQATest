@@ -12,7 +12,7 @@ describe('two test', () => {
         cy.get('#submit').click()
         cy.get('#userEmail').clear()
         cy.get('input[placeholder="name@example.com"]').type('John Doe')
-        cy.get('#submit').contains('Submit').should('be.visible')
+        cy.get('#submit').contains('Submit').should('be.visible');
 
         
         
