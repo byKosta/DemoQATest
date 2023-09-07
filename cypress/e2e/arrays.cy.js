@@ -5,7 +5,7 @@ describe('Arrays', () => {
     beforeEach(() => {
         cy.viewport(1280, 720)
         cy.visit('https://openweathermap.org/')
-        cy.get('#desktop-menu a[href="/guide"]').invoke('text').as('menuGuide')
+        cy.get('#desktop-menu a[href="/guide"]').invoke('text').as('menuGuide');
     })
     
 
@@ -15,7 +15,7 @@ describe('Arrays', () => {
         cy.get('ul.search-dropdown-menu li').each(($el, index) => {
            let text = $el.text()
            if(text.includes('New York City, US')){
-               cy.wrap($el).click()
+               cy.wrap($el).click();
            }
         })
         it
