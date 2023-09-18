@@ -18,6 +18,6 @@ describe('Arrays', () => {
                cy.wrap($el).click();
            }
         })
-        it
+        
     })
 })
