@@ -6,6 +6,6 @@ describe('first test', () => {
       cy.visit('https://demoqa.com/');
       cy.on('uncaught:exception', (err, runnable) => {
         expect(err.message).to.equal(messages.deleteConfirmMessages);
-      })
-  })
-})
+      });
+  });
+});
