@@ -9,5 +9,5 @@ describe('first test', () => {
       cy.get('div.main-header').should('have.text', 'Elements');
 
      
-      })
-  })
+      });
+  });
