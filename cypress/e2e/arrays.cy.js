@@ -17,7 +17,7 @@ describe('Arrays', () => {
            if(text.includes('New York City, US')){
                cy.wrap($el).click();
            }
-        })
+        });
         
-    })
-})
+    });
+});
