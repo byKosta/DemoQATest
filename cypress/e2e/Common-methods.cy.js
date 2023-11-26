@@ -20,7 +20,7 @@ describe('Common methods', () => {
         .type('John')
         .should('have.value', 'John')
         .clear()
-        .should('have.value', '')
+        .should('have.value', '');
 
         cy.get('div.element-group #item-1').contains('Check Box').click();
         cy.get('input#tree-node-home').check({force: true}).should('be.checked');
