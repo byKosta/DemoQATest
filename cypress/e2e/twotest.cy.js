@@ -2,7 +2,7 @@
 
 describe('two test', () => {
     it('verify link', () => {
-        cy.visit('https://demoqa.com/')
+        cy.visit('https://demoqa.com/');
         cy.get('div.category-cards .card-body h5').contains('Elements').click();
         cy.get('#item-0').contains('Text Box').click();
         cy.get('#userName').type('John');
