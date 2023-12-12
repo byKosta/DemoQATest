@@ -6,7 +6,7 @@ describe('Arrays', () => {
         cy.viewport(1280, 720)
         cy.visit('https://openweathermap.org/')
         cy.get('#desktop-menu a[href="/guide"]').invoke('text').as('menuGuide');
-    })
+    });
     
 
     it('Verify Meny Search', function () {
