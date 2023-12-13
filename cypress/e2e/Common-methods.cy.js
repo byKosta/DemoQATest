@@ -13,7 +13,7 @@ describe('Common methods', () => {
         cy.get('div.avatar').should('have.css','color','rgb(1, 160, 224)');
         cy.get('div.card-body h5').contains('Elements').click();
         cy.get('div.main-header').should('contain', 'Elements');
-        cy.get('div.main-header').should('be.visible')  
+        cy.get('div.main-header').should('be.visible'); 
         cy.contains('Text Box').click();
         cy.get('input#userName')
         .should('have.attr', 'placeholder', 'Full Name')  
