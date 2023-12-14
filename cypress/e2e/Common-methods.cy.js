@@ -26,7 +26,7 @@ describe('Common methods', () => {
         cy.get('input#tree-node-home').check({force: true}).should('be.checked');
         cy.get('input#tree-node-home').uncheck({force: true});
       
-    });
+    })
 
 
 
