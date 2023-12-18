@@ -37,6 +37,6 @@ describe('Common methods', () => {
         cy.visit('https://openweathermap.org/')
         cy.contains('Marketplace').invoke('removeAttr', 'target').click();
 });
-})
+});
 
  
