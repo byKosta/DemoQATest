@@ -31,8 +31,8 @@ describe('Common methods', () => {
 
 
     it('method invoc', () => {
-        cy.timeout(7000)
-        cy.viewport(1280, 720)
+        cy.timeout(7000);
+        cy.viewport(1280, 720);
 
         cy.visit('https://openweathermap.org/')
         cy.contains('Marketplace').invoke('removeAttr', 'target').click();
