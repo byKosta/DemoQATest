@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="14.056" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2023-06-25T18:21:58" tests="0" file="cypress\e2e\Common-methods.cy.js" time="0.000" failures="0">
-  </testsuite>
-  <testsuite name="Common methods" timestamp="2023-06-25T18:21:58" tests="1" time="14.025" failures="0">
-    <testcase name="Common methods method invoc" time="10.960" classname="method invoc">
-    </testcase>
-  </testsuite>
-</testsuites>
