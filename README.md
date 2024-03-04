@@ -10,6 +10,7 @@ Cypress is an advanced end-to-end testing framework designed for modern web appl
 
 # 1. Install Node.js:
 Ensure you have the latest version of Node.js installed. Head over to the official Node.js website and download the installation package.
+https://nodejs.org/en/download/current
 
 # 2. Set Up Your Project:
 Create a new project or navigate to your existing one. Open your terminal and traverse to your project directory:
