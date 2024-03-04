@@ -18,24 +18,12 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
-          record: true
+
           start: npx cypress open
           wait-on: 'https://demoqa.com/'
           wait-on-timeout: 120
 
-      - name: Upload Cypress screenshots
-        if: failure()
-        uses: actions/upload-artifact@v3
-        with:
-          name: cypress-screenshots
-          path: cypress/screenshots
 
-      - name: Upload Cypress videos
-        if: failure()
-        uses: actions/upload-artifact@v3
-        with:
-          name: cypress-videos
-          path: cypress/videos
 
     
 
