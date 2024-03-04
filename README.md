@@ -19,6 +19,7 @@ cd path/to/your/project
 ```
 # 3. Initialize Your Project:
 Initialize your project with npm, generating a package.json file containing essential project details:
+https://www.cypress.io/
 ```bash
 npm init -y
 ```
@@ -37,6 +38,7 @@ This command opens the Cypress Test Runner interface, providing an intuitive pla
 ### Allure Integration
 
 #### Installing Allure
+https://allurereport.org/docs/gettingstarted-installation/
 
 To integrate Allure into your Cypress project, follow these steps:
 
