@@ -18,12 +18,12 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
-        
+
           start: npx cypress open
           wait-on: 'https://demoqa.com/'
           wait-on-timeout: 120
 
-      
+
 
     
 
