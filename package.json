@@ -7,15 +7,13 @@
     "ui-regression": "cypress run --browser chrome --spec cypress/e2e/**.js",
     "ui-regression-allure": "cypress run --browser chrome --spec cypress/e2e/**.js --env allure=true",
     "allure:report": "allure generate allure-results --clean -o allure-report"
-    
-    
   },
   "author": "byKosta",
   "license": "ISC",
   "devDependencies": {
     "@shelex/cypress-allure-plugin": "^2.40.0",
     "cucumber": "^6.0.7",
-    "cypress": "^12.14.0",
+    "cypress": "^9.1.1",
     "cypress-cucumber-preprocessor": "^4.3.1"
   }
 }

@@ -6,9 +6,36 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install dependencies
+        run: npm ci
+
       - name: Cypress run
         uses: cypress-io/github-action@v5
+        with:
+          record: true
+          start: npx cypress open
+          wait-on: 'https://demoqa.com/'
+          wait-on-timeout: 120
+
+      - name: Upload Cypress screenshots
+        if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+
+      - name: Upload Cypress videos
+        if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: cypress-videos
+          path: cypress/videos
 
     
 
