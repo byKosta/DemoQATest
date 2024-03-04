@@ -51,8 +51,9 @@ Update your `cypress.json` file to include the Cypress Allure Reporter:
 {
   "reporter": "cypress-allure-reporter"
 }
-Sample GitHub Actions Pipeline
-Here is an example GitHub Actions pipeline configuration for running Cypress tests and generating Allure reports:
+
+## Sample GitHub Actions Pipeline
+## Here is an example GitHub Actions pipeline configuration for running Cypress tests and generating Allure reports:
 name: CI/CD
 
 on:
