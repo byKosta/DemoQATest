@@ -23,4 +23,4 @@ jobs:
       uses: cypress-io/github-action@v6
       with:
         browser: chrome
-        spec: ${{ github.workspace }}/cypress/e2e/Test/*.cy.js
+        spec: cypress/e2e/**.js
