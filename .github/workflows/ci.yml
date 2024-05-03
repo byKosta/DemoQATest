@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: End-to-end tests
 on: push
 jobs:
@@ -11,3 +12,31 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
       
+=======
+name: Cypress tests
+on: push
+jobs:
+  cypress-run:
+    name: Cypress run
+    runs-on: ubuntu-22.04
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: cd web && npm ci
+
+    - name: Cache dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - name: Cypress run
+      uses: cypress-io/github-action@v6
+      with:
+        working-directory: web
+        browser: chrome
+>>>>>>> 082daff452126e4c375038a6da0ed116f43892c3
