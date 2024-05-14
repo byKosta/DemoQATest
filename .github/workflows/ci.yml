@@ -39,4 +39,4 @@ jobs:
              cypress/results/**/*.xml
              cypress/results/**/*.trx
              cypress/results/**/*.json
-            github_token: ${{ secrets.GITHUB_TOKEN }}
+            github_token: ${{ secrets.MY_GITHUB_TOKEN }}
