@@ -1,7 +1,7 @@
 
 ![QA](https://github.com/byKosta/DemoQATest/blob/master/Screenshot_500.png)
 
-## Demo QA
+## DemoQA is a website that offers various demonstration examples and educational materials for testing web applications. It provides a wide range of interactive examples allowing users to explore the basic features and capabilities of various web development technologies such as HTML, CSS, JavaScript, React, and many others. Additionally, DemoQA offers code samples and instructions to help users better understand and master different aspects of web development. This resource is a valuable tool for both beginner developers looking to learn and experienced professionals seeking to expand their knowledge and improve their skills.
 
 - [Link to Demo QA](https://demoqa.com/)
 
