@@ -2,7 +2,7 @@ name: Cancel
 
 on:
   pull_request:
-    branches: [main]
+    branches: [master]
 
 jobs:
   cancel:
