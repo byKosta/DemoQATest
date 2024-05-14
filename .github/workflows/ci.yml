@@ -36,4 +36,4 @@ jobs:
         if: always()
         with:
           files: cypress/results/*.xml
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.MY_GITHUB_TOKEN }}
