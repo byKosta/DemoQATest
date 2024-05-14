@@ -31,12 +31,4 @@ jobs:
          name: cypress-results
          path: cypress/results
      
-    - name: Publish Test Results
-      uses: EnricoMi/publish-unit-test-result-action@v2
-      if: always()
-      with:
-            files: |
-             cypress/results/**/*.xml
-             cypress/results/**/*.trx
-             cypress/results/**/*.json
-            github_token: ${{ secrets.MY_GITHUB_TOKEN }}
+    
