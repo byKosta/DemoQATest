@@ -6,14 +6,15 @@
   "scripts": {
     "ui-regression": "cypress run --browser chrome --spec 'cypress/e2e/**/*.cy.js'",
     "ui-regression-allure": "cypress run --browser chrome --spec 'cypress/e2e/**/*.cy.js' --env allure=true",
-    "allure:report": "allure generate allure-results --clean -o allure-report"
-},
+    "allure:report": "allure generate allure-results --clean -o allure-report",
+    "cypress:open": "cypress open"
+  },
   "author": "byKosta",
   "license": "ISC",
   "devDependencies": {
     "@shelex/cypress-allure-plugin": "^2.40.0",
     "cucumber": "^6.0.7",
-    "cypress": "^9.1.1",
+    "cypress": "^13.9.0",
     "cypress-cucumber-preprocessor": "^4.3.1"
   }
 }
